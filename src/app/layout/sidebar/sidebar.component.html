@@ -1,0 +1,646 @@
+<div class="left-side-menu">
+
+  <div class="h-100" data-simplebar>
+
+    <div id="sidebar-menu">
+
+      <ul id="side-menu">
+        <li>
+          <a routerLink="/dashboard">
+            <i class="mdi mdi-view-dashboard"></i>
+            <!--                        <span class="badge bg-success rounded-pill float-end">9+</span>-->
+            <span class="uppercase"> Dashboard </span>
+          </a>
+        </li>
+        <li>
+          <a href="#createuser" data-bs-toggle="collapse">
+            <i class="mdi mdi-account-box-multiple"></i>
+            <span class="uppercase"> User Creation </span>
+            <span class="menu-arrow"></span>
+          </a>
+          <div class="collapse" id="createuser">
+            <ul class="nav-second-level">
+              <li>
+                <a class="uppercase" routerLink="/user/create"> Create User</a>
+              </li>
+              <li>
+                <a class="uppercase" routerLink="/user/list">User List</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#cms" data-bs-toggle="collapse">
+            <i class="mdi mdi-account-box-multiple"></i>
+            <span class="uppercase"> CMS </span>
+            <span class="menu-arrow"></span>
+          </a>
+          <div class="collapse" id="cms">
+            <ul class="nav-second-level">
+              <li>
+                <a href="#home" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> Home </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="home">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#homemenuimage" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/home">Home-Content </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#homemenuimage" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/homeimage"> Home-Image </span>
+                        <!--                                  <span class="mdi mdi-pencil" routerLink="/main/homeimage-list" ></span>-->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#homemenugraph" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/homegraph"> Home-Graph </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#abouts" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> About </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="abouts">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#aboutsbrief" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/philsys-briefer"> PhilSys Briefer </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/about-brief"></span>-->
+                      </a>
+                    </li>
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#faq" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/faq"> FAQ </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/faq-create"></span>-->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#philsys" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/philsys-number"> PhilSys Number </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/philsys-create"></span>-->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#legalbases" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/legal-bases"> Legal Bases </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/legalbases-create"></span>-->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#dataprivacy" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/data-privacy"> Data Privacy </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/dataprivacy-create"></span>-->
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#careers" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/careers"> Careers </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/careers-create"></span>-->
+
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#transparancy" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/transparency"> Transparency </span>
+                        <!--                              <span class="mdi mdi-pencil" routerLink="/main/transparancy-create"></span>-->
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#council" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase"> PhilySys Council </span>
+                        <span class="menu-arrow"></span>
+                      </a>
+                      <div class="collapse" id="council">
+                        <ul class="nav-second-level">
+                          <li>
+                            <a href="#composition" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/cms/council/composition">Composition </span>
+                              <!--                                    <span class="mdi mdi-pencil" routerLink="/main/composition-create"></span>-->
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#function" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/cms/council/function">Function </span>
+                              <!--                                    <span class="mdi mdi-pencil" routerLink="/main/function-create"></span>-->
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#interagency" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/cms/council/inter-agency">InterAgency </span>
+                              <!--                                    <span class="mdi mdi-pencil" routerLink="/main/interagency-create"></span>-->
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#resolution" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/cms/council/resolution">Resolution </span>
+                              <!--                                    <span class="mdi mdi-pencil" routerLink="/main/resolution-create"></span>-->
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#registration" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> Registration </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="registration">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#registerstep1" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/registration-process"> Registration Process </span>
+                        <span class="menu-arrow"></span>
+                      </a>
+                      <div class="collapse" id="registerstep1">
+                        <ul class="nav-second-level">
+                          <li>
+                            <a href="#registerstep2" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/cms/registration-remainder-process"> Step2
+                                Registration Remainder and Process </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </li>
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#supportdocument" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/support-document"> Support Document </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#registercenter" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/register-center"> Register Center </span>
+                        <span class="menu-arrow"></span>
+                      </a>
+                      <div class="collapse" id="registercenter">
+                        <ul class="nav-second-level">
+                          <li>
+                            <a href="#registermyid" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/cms/registration-my-id"> MY ID </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#usecase" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase" routerLink="/cms/use-case"> Usecases </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="usecase">
+                  <ul class="nav-second-level">
+                    <!--                          <li>-->
+                    <!--                            <a href="#usecase1" data-bs-toggle="collapse">-->
+                    <!--                              <i class="mdi mdi-account-box-multiple" ></i>-->
+                    <!--                              &lt;!&ndash;                        <i class="mdi mdi-chevron-right"></i> &lt;!&ndash; Add an appropriate icon &ndash;&gt;&ndash;&gt;-->
+                    <!--                              <span class="uppercase"> Usecase </span>-->
+                    <!--                              <span class="menu-arrow"></span>-->
+                    <!--                            </a>-->
+                    <!--                            <div class="collapse" id="usecase1">-->
+                    <!--                              <ul class="nav-third-level">-->
+                    <!--                                <li>-->
+                    <!--                                  <a class="uppercase" routerLink="/main/usecase-create" >Usecase Create</a>-->
+                    <!--                                </li>-->
+                    <!--                                <li>-->
+                    <!--                                  <a class="uppercase"  routerLink="/main/usecase-list">Usecase List</a>-->
+                    <!--                                </li>-->
+                    <!--                              </ul></div>-->
+                    <!--                          </li>-->
+                    <!-- Sub-Submenu -->
+
+
+                    <li>
+                      <a href="#philypscheck" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/cms/philsys-check"> PhilySys Check </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="philypscheck">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/philypscheck-create" >Philypscheck Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/philypscheck-list">Philypscheck List</a>-->
+                      <!--                                </li>-->
+                      <!--                                &lt;!&ndash; Add more sub-submenu items as needed &ndash;&gt;-->
+                      <!--                              </ul>-->
+                      <!--                            </div>-->
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#ephilid" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> EphilId </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="ephilid">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#ephil1" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <!--                        <i class="mdi mdi-chevron-right"></i> &lt;!&ndash; Add an appropriate icon &ndash;&gt;-->
+                        <span class="uppercase" routerLink="cms/ephilid"> EphilId </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="ephil1">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/ephilid-create" >EphilId Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/ephilid-list">EphilId List</a>-->
+                      <!--                                </li>-->
+                      <!--                              </ul></div>-->
+                    </li>
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#ephilidfaq" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/ephilidfaq-list"> EphilId Faqs </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="ephilidfaq">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/ephilidfaq-create" >EphilId Faq Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/ephilidfaq-list">EphilId Faq List</a>-->
+                      <!--                                </li>-->
+                      <!--                                &lt;!&ndash; Add more sub-submenu items as needed &ndash;&gt;-->
+                      <!--                              </ul>-->
+                      <!--                            </div>-->
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#ephilidgallery" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/eimage-list"> EphilId Gallery </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="ephilidgallery">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/eimage-create" >EphilId Gallery Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/eimage-list">EphilId Gallery List</a>-->
+                      <!--                                </li>-->
+                      <!--                                &lt;!&ndash; Add more sub-submenu items as needed &ndash;&gt;-->
+                      <!--                              </ul>-->
+                      <!--                            </div>-->
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                  </ul>
+                </div>
+              </li>
+
+              <li>
+                <a href="#partner" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> Partner and Device </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="partner">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#relyingparty" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <!--                        <i class="mdi mdi-chevron-right"></i> &lt;!&ndash; Add an appropriate icon &ndash;&gt;-->
+                        <span class="uppercase" routerLink="/rp-list"> Relying Party </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="relyingparty">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/rp-create" > Relying Party Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/rp-list"> Relying Party List</a>-->
+                      <!--                                </li>-->
+                      <!--                              </ul></div>-->
+                    </li>
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#Operationalmodel" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/op-list"> Operational Model </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="Operationalmodel">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/op-create" > Operational Model Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/op-list"> Operational Model List</a>-->
+                      <!--                                </li>-->
+                      <!--                                &lt;!&ndash; Add more sub-submenu items as needed &ndash;&gt;-->
+                      <!--                              </ul>-->
+                      <!--                            </div>-->
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#biopart" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/biopartner-list"> Biometric Partner </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="biopart">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/biopartner-create" > Biometric Partner Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/biopartner-list"> Biometric Partner List</a>-->
+                      <!--                                </li>-->
+                      <!--                                &lt;!&ndash; Add more sub-submenu items as needed &ndash;&gt;-->
+                      <!--                              </ul>-->
+                      <!--                            </div>-->
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#tsp" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/tsp-list"> Trusted Service Provider </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+                      <!--                            <div class="collapse" id="tsp">-->
+                      <!--                              <ul class="nav-third-level">-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase" routerLink="/main/tsp-create" > TSP Create</a>-->
+                      <!--                                </li>-->
+                      <!--                                <li>-->
+                      <!--                                  <a class="uppercase"  routerLink="/main/tsp-list"> TSP List</a>-->
+                      <!--                                </li>-->
+                      <!--                                &lt;!&ndash; Add more sub-submenu items as needed &ndash;&gt;-->
+                      <!--                              </ul>-->
+                      <!--                            </div>-->
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#add" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase"> Authentication device and documents </span>
+                        <span class="menu-arrow"></span>
+                      </a>
+                      <div class="collapse" id="add">
+                        <ul class="nav-third-level">
+                          <li>
+                            <a href="#authdevice" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/devauth-list"> Authentication Devices </span>
+                              <!--                                    <span class="menu-arrow"></span>-->
+                            </a>
+                            <!--                                  <div class="collapse" id="authdevice">-->
+                            <!--                                    <ul class="nav-second-level">-->
+                            <!--                                      <li>-->
+                            <!--                                        <a class="uppercase" routerLink="/main/devauth-create" > Authentication Devices Create</a>-->
+                            <!--                                      </li>-->
+                            <!--                                      <li>-->
+                            <!--                                        <a class="uppercase"  routerLink="/main/devauth-list"> Authentication Devices List</a>-->
+                            <!--                                      </li>-->
+                            <!--                                    </ul>-->
+                            <!--                                  </div>-->
+                          </li>
+                          <li>
+                            <a href="#biodevice" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/biodev-list"> Biometric Devices </span>
+                              <!--                                    <span class="menu-arrow"></span>-->
+                            </a>
+
+                          </li>
+                          <li>
+                            <a href="#authdocs" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/authdocs-list"> Authentication Documents </span>
+                              <!--                                    <span class="menu-arrow"></span>-->
+                            </a>
+
+                          </li>
+                          <li>
+                            <a href="#qr" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/qrscan-list"> QR-Code Scanner </span>
+                              <!--                                    <span class="menu-arrow"></span>-->
+                            </a>
+
+                          </li>
+                          <li>
+                            <a href="#ekyc" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/ekyc-list"> Paperless offline e-KYC </span>
+                              <!--                                    <span class="menu-arrow"></span>-->
+                            </a>
+
+                          </li>
+                          <li>
+                            <a href="#devsection" data-bs-toggle="collapse">
+                              <i class="mdi mdi-account-box-multiple"></i>
+                              <span class="uppercase" routerLink="/devsec-list"> Developer Section </span>
+                              <!--                                    <span class="menu-arrow"></span>-->
+                            </a>
+
+                          </li>
+
+                          <!-- Add more sub-submenu items as needed -->
+                        </ul>
+                      </div>
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                  </ul>
+                </div>
+              </li>
+
+
+              <li>
+                <a href="#testimonial" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase" routerLink="/testimonial-list"> Testimonial </span>
+                  <!--                        <span class="menu-arrow"></span>-->
+                </a>
+
+              </li>
+
+
+              <li>
+                <a href="#news" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> News and Events </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="news">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#adver" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/adv-list"> Advertisement </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <!-- Sub-Submenu -->
+                    <li>
+                      <a href="#sidebarTasks" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/event-list"> Event </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="#featurevedio" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/featurevideo-list"> Feature Video </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="#event" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/eventimage-list"> Event-Image </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <!-- End of Sub-Submenu -->
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#know" data-bs-toggle="collapse">
+                  <i class="mdi mdi-account-box-multiple"></i>
+                  <span class="uppercase"> Knowledge Management </span>
+                  <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="know">
+                  <ul class="nav-second-level">
+                    <li>
+                      <a href="#media" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/mediakno-list"> Media </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="#document" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/documentkno-list"> Document </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="#policies" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/policeskno-list"> Polices </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="#procedures" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/procedurekno-list"> Procedures </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+                    <li>
+                      <a href="#resorce" data-bs-toggle="collapse">
+                        <i class="mdi mdi-account-box-multiple"></i>
+                        <span class="uppercase" routerLink="/resorceskno-list"> Resources </span>
+                        <!--                              <span class="menu-arrow"></span>-->
+                      </a>
+
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+
+
+
+
+
+
+
+
+        <li>
+          <a routerLink="/contact" data-bs-toggle="collapse">
+            <i class="mdi mdi-account-box-multiple"></i>
+            <span class="uppercase"> Contact Us </span>
+            <span class="menu-arrow"></span>
+          </a>
+
+        </li>
+        <!--final ul-->
+      </ul>
+
+    </div>
+    <!-- End Sidebar -->
+
+    <div class="clearfix"></div>
+
+  </div>
+  <!-- Sidebar -left -->
+
+</div>

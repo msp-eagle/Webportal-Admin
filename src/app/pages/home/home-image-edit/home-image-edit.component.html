@@ -1,0 +1,52 @@
+<div class="container-fluid">
+
+
+
+  <div class="row">
+    <div class="col-lg-8">
+
+      <div class="card">
+        <div class="card-body">
+          <h2 class="header-title uppercase"> Update Home-Image</h2><br>
+
+
+
+          <form [formGroup]="formgroup" (ngSubmit)="onSubmit()" class="parsley-examples">
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <div >
+                    <div *ngIf="!attachemetImage" >
+
+                      <img class="uploaded-image img-thumbnail"
+                           src="data:image/png;base64,{{homeimage.image}}">
+                    </div>
+                    <div *ngIf="isImageFile" >
+
+                      <img class="uploaded-image img-thumbnail"
+                           src="{{data}}">
+                    </div>
+                  </div>
+                </div>
+                <h4>Upload File</h4>
+                <input formControlName="image"   id="files"  type="file" (change)="onFileSelect($event)"  class="form-control form-control-lg" />
+              </div>
+
+
+            </div>
+
+
+            <br>
+            <div class="text-end">
+              <button class="btn btn-primary waves-effect waves-light" type="submit">Submit</button>&nbsp;
+              <button type="reset" class="btn btn-secondary waves-effect">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    <!-- end col -->
+
+
+  </div>
+</div>

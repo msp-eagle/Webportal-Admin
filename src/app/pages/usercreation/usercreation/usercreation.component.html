@@ -1,0 +1,92 @@
+<div class="breadcrumbbar">
+  <!-- <app-breadcrumb /> -->
+
+</div>
+<!-- End Breadcrumbbar -->
+<!-- Start Contentbar -->
+<div class="contentbar">
+  <!-- Start row -->
+  <div class="row">
+    
+    <!-- Start col -->
+    <div class="col-lg-12">
+      <div class="card ">
+        <div class="card-body">
+          <h3 class="mb-2 header-title uppercase"> User Creation</h3><br>
+          <form class="needs-validation" novalidate [formGroup]="formgroup" (ngSubmit)="OnSubmit()">
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="firstname">First name</label>
+                <input type="text" class="form-control" id="firstname" placeholder="First name" formControlName="firstname" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="lastname">Last name</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last name" formControlName="lastname" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="email">Email</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="email">@</span>
+                  </div>
+                  <input type="text" formControlName="email" class="form-control" id="email" placeholder="Username" aria-describedby="email" required>
+                  <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="password">Password</label>
+                <input type="text" class="form-control" id="password"  required formControlName="password">
+                <div class="invalid-feedback">
+                  Please provide a valid city.
+                </div>
+              </div>
+<!--              <div class="col-md-3 mb-3">-->
+<!--                <label for="validationCustom04">State</label>-->
+<!--                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>-->
+<!--                <div class="invalid-feedback">-->
+<!--                  Please provide a valid state.-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-md-3 mb-3">-->
+<!--                <label for="validationCustom05">Zip</label>-->
+<!--                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>-->
+<!--                <div class="invalid-feedback">-->
+<!--                  Please provide a valid zip.-->
+<!--                </div>-->
+<!--              </div>-->
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit">Submit form</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End col -->
+
+    <!-- End col -->
+  </div>
+  <!-- End row -->
+  <!-- Start row -->
+
+  <!-- End row -->
+</div>

@@ -1,0 +1,124 @@
+<div class="container-fluid">
+
+
+
+    <div class="row">
+        <div class="col-lg-8">
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="header-title uppercase"> Create Advertisement</h2><br>
+
+
+
+                    <form [formGroup]="formgroup" (ngSubmit)="onSubmits()" class="parsley-examples">
+
+                 
+
+                        <div *ngIf="isSubmitted">
+                            <div *ngIf="!isLoadingResults && !isError"
+                                class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                                <strong> Fill mandatory fields !</strong>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label for="cityname" class="form-label">Advertisement Title<span
+                                            class="text-danger">*</span></label>
+                                    <input formControlName="advtitle" type="text" name="" parsley-trigger="change"
+                                        required placeholder="Enter Event Title" class="form-control" id="cityname" />
+
+                                    <div *ngIf="isSubmitted && isValid['advtitle'].errors" class="text-danger">
+                                        <div *ngIf="isValid.advtitle.errors.required">Advertisement Title is required *</div>
+                                    </div>
+                                </div>
+                            </div>
+                     
+                        </div>
+                 
+                      
+
+                 
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="eventdate" class="form-label">Advertisement Date<span
+                                            class="text-danger">*</span></label>
+                                    <input  bsDatepicker type="text" formControlName="advdate" name="" 
+                                        required placeholder="Choose Event Date" class="form-control" id="eventdate" />
+
+                                    <div *ngIf="isSubmitted && isValid['advdate'].errors" class="text-danger">
+                                        <div *ngIf="isValid.advdate.errors.required">Advertisement Date is required *</div>
+                                    </div>
+                                </div>
+                        
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="eventtime" class="form-label">Advertisement Time<span
+                                            class="text-danger">*</span></label>
+                                    <input formControlName="advtime" type="time" name="" parsley-trigger="change"
+                                        required placeholder="Enter Event Title" class="form-control" id="eventtime" />
+
+                                    <div *ngIf="isSubmitted && isValid['advtime'].errors" class="text-danger">
+                                        <div *ngIf="isValid.advtime.errors.required">Advertisement Time is required *</div>
+                                    </div>
+                                </div>
+
+                      
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="description" class="form-label">Description<span class="text-danger"> *</span></label>
+                                        <textarea class="form-control"  formControlName="advdesc" id="description" rows="5"></textarea>
+                                        <div *ngIf="isSubmitted && isValid['advdesc'].errors" class="text-danger">
+                                            <div *ngIf="isValid.advdesc.errors.required">Advertisement Description is required *</div>
+                                        </div>    
+                                    </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+
+<br>
+
+                                    <div *ngIf="attachemetImage">
+                                        <div *ngIf="isImageFile">
+                
+                                        
+                                        <img class="uploaded-image img-thumbnail imgSize"
+                                            style="height:150px;width: 250;" src="{{data}}" />
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <h4>Upload File</h4>
+                                    <input formControlName="image"   id="files"  type="file" (change)="onFileSelect($event)"  class="form-control form-control-lg" />
+                            </div>
+            
+            
+                        </div>
+
+
+<br>
+                        <div class="text-end">
+                            <button class="btn btn-primary waves-effect waves-light" type="submit">Submit</button>&nbsp;
+                            <button type="reset" class="btn btn-secondary waves-effect">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- end card -->
+        </div>
+        <!-- end col -->
+
+
+    </div>
+</div>

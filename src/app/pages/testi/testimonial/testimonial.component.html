@@ -1,0 +1,73 @@
+<div class="container-fluid">
+
+  <div class="col-lg-6">
+
+    <div class="card">
+      <div class="card-body">
+        <h2 class="header-title uppercase">Create Testimonial</h2><br>
+
+
+        <form [formGroup]="formgroup" (ngSubmit)="onSubmit()" class="parsley-examples" novalidate="">
+
+          <div *ngIf="isSubmitted">
+            <div *ngIf="!isLoadingResults && !isError" class="alert alert-danger alert-dismissible fade show" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <strong> Fill mandatory fields !</strong>
+            </div>
+
+          </div>
+
+          <div class="mb-3">
+            <label for="title" class="form-label">Title<span class="text-danger">*</span></label>
+            <input formControlName="title" type="text" name="title" parsley-trigger="change" required="" placeholder="Type your title" class="form-control" id="title">
+
+            <div *ngIf="isSubmitted && isValid['title'].errors" class="text-danger">
+              <div *ngIf="isValid.title.errors.required">Title is required *</div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description<span class="text-danger">*</span></label>
+
+            <textarea formControlName="description" required="" class="form-control" id="description"></textarea>
+            <div *ngIf="isSubmitted && isValid['description'].errors" class="text-danger">
+              <div *ngIf="isValid.description.errors.required">Description is required *</div>
+            </div>
+          </div>
+          <div class=" mb-3">
+            <label for="image">Image</label>
+            <input type="file" id="image"
+                   (change)="onFileChanged($event)" name="image" class="form-control" formControlName="image"
+                   placeholder="Upload Image"/>
+            <div *ngIf="isSubmitted && isValid['image'].errors" class="text-danger">
+              <div *ngIf="isValid.image.errors.required">Image is required</div>
+
+            </div>
+          </div>
+          <div class="mb-3 ">
+            <label for="address" class="form-label">Address<span class="text-danger">*</span></label>
+
+            <div>
+              <input type="text" formControlName="address" class="form-control" required  id="address"/>
+              <div *ngIf="isSubmitted && isValid['address'].errors" class="text-danger">
+                <div *ngIf="isValid.address.errors.required">Address is required *</div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+          <div class="text-end">
+            <button class="btn btn-primary waves-effect waves-light" type="submit">Submit</button>&nbsp;
+            <button type="reset" class="btn btn-secondary waves-effect">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div> <!-- end card -->
+  </div>
+
+</div>

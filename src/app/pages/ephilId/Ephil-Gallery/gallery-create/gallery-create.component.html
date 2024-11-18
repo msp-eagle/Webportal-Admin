@@ -1,0 +1,61 @@
+<div class="container-fluid">
+
+
+
+  <div class="row">
+    <div class="col-lg-8">
+
+      <div class="card">
+        <div class="card-body">
+          <h2 class="header-title uppercase"> Create Ephil-Image</h2><br>
+
+
+
+          <form [formGroup]="formgroup" (ngSubmit)="onSubmit()" class="parsley-examples">
+
+
+
+            <!--                        <div *ngIf="isSubmitted">-->
+            <!--                            <div *ngIf="!isLoadingResults && !isError"-->
+            <!--                                class="alert alert-danger alert-dismissible fade show" role="alert">-->
+            <!--                                <button type="button" class="btn-close" data-bs-dismiss="alert"-->
+            <!--                                    aria-label="Close"></button>-->
+            <!--                                <strong> Fill mandatory fields !</strong>-->
+            <!--                            </div>-->
+
+            <!--                        </div>-->
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <div *ngIf="attachemetImage">
+                    <div *ngIf="isImageFile">
+
+                      <img class="uploaded-image img-thumbnail imgSize"
+                           style="height:150px;width: 250px;" src="{{data}}" />
+                    </div>
+                  </div>
+                </div>
+                <h4>Upload File</h4>
+                <input formControlName="image"   id="files"  type="file" (change)="onFileSelect($event)"  class="form-control form-control-lg" />
+              </div>
+
+
+            </div>
+
+
+            <br>
+            <div class="text-end">
+              <button class="btn btn-primary waves-effect waves-light" type="submit">Submit</button>&nbsp;
+              <button type="reset" class="btn btn-secondary waves-effect">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    <!-- end col -->
+
+
+  </div>
+</div>
+
+

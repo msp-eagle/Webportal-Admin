@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body table-responsive">
+          <div class="grid-container">
+            <div class="row">
+              <h3 class=" col-md-10 header-title uppercase"> Support Document List</h3>
+              <button  class="col-md-2 button" routerLink="./create"><strong>CREATE</strong></button>
+            </div>
+          </div>
+          <h3 class="mt-0 header-title uppercase"></h3><br>
+          <br><br>
+          <table  class="table table-bordered table-bordered dt-responsive nowrap">
+            <thead>
+            <tr>
+              <th>S.No</th>
+              <th>About Content</th>
+
+
+
+
+              <th>Action</th>
+              <th>Delete</th>
+            </tr>
+            </thead>
+
+
+            <tbody>
+            <tr *ngFor="let data of content;let i= index">
+              <td>{{i+1}}</td>
+              <td [innerHtml]="data.content"></td>
+              <td style="white-space: nowrap; width: 1%;">
+                <div class="btn-group btn-group-sm" style="float: none;">
+                  <a routerLink="./edit/{{data.id}}" ><button type="button" class="tabledit-edit-button btn btn-success" style="float: none;"><span class="mdi mdi-pencil"></span></button>
+                  </a>
+                </div></td>
+              <td>
+                <button type="button" (click)='delete(data.id)' class="tabledit-edit-button btn btn-danger" style="float: none;"><i class="mdi mdi-delete"></i></button>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+          <!-- <div class="col-xl-12 col-md-12" style="margin-top: 10px;">
+              <div *ngIf="maxSize && totalItems && currentPage">
+                  <pagination [totalItems]="totalItems" [(ngModel)]="currentPage"
+                      (pageChanged)="pageChanged($event)" [maxSize]="maxSize"></pagination>
+              </div>
+          </div> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

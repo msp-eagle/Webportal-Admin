@@ -1,0 +1,18 @@
+.marq {
+    width: 100%;
+
+    background-color: linear-gradient(to left, red, green);
+    background-clip: text;
+
+}
+
+.marq h5 {
+    background: linear-gradient(45deg, #1e90ff, #ff1493);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+}
+a{
+    cursor: pointer;
+}

@@ -1,0 +1,120 @@
+<!--<div class="container-fluid">-->
+<!--    <div class="row">-->
+<!--        <div class="col-12">-->
+<!--            <div class="card">-->
+<!--                <div class="card-body table-responsive">-->
+<!--                    <h3 class="mt-0 header-title uppercase"> Event List</h3><br>-->
+<!--                   <a routerLink="/davangree-eventcreate">-->
+<!--                    <button style="float: right;" type="button" class="btn btn-primary rounded-pill waves-effect waves-light"><i class="fa fa-plus"></i>&nbsp;Create Event</button>-->
+
+<!--                   </a> -->
+<!--                    <br><br><br>-->
+<!--                  -->
+
+<!--                    <table  class="table table-bordered table-bordered dt-responsive nowrap">-->
+<!--                        <thead>-->
+<!--                        <tr>-->
+<!--                            <th>S.No</th>-->
+<!--                            <th>Event</th>-->
+<!--                            <th>Description</th>-->
+<!--                            <th>Event Date</th>-->
+<!--                            <th>Event Time</th>-->
+<!--                            <th>Event Image</th>-->
+<!--                            -->
+
+<!--                            <th>Action</th>-->
+<!--                            <th>Delete</th>-->
+<!--                        </tr>-->
+<!--                        </thead>-->
+
+
+<!--                        <tbody>-->
+<!--                        <tr *ngFor="let data of event;let i= index">-->
+<!--                            <td>{{i+1}}</td>-->
+<!--                            <td>{{data.eventitle}}</td>-->
+<!--                            <td>{{data.desc}}</td>-->
+<!--                            <td>{{data.todate}}</td>-->
+<!--                       -->
+<!--                            <td>{{data.time}}</td>-->
+<!--                            <td><img class="uploaded-image img-thumbnail" style="width:150px;height:100px;"-->
+<!--                                src="data:image/png;base64,{{data.image}}"></td>-->
+<!--                               -->
+
+<!--                            <td style="white-space: nowrap; width: 1%;">-->
+<!--                                <div class="btn-group btn-group-sm" style="float: none;">-->
+<!--                                    <a ><button type="button" class="tabledit-edit-button btn btn-success" style="float: none;"><span class="mdi mdi-pencil"></span></button>-->
+<!--                                    </a> -->
+<!--                                -->
+<!--                                </div></td>-->
+<!--                                <td>-->
+<!--                                    <button type="button" (click)='deleteAnswer(data.id)' class="tabledit-edit-button btn btn-danger" style="float: none;"><i class="mdi mdi-delete"></i></button>-->
+
+<!--                                </td>-->
+<!--                        </tr>-->
+<!--                   -->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                    &lt;!&ndash; <div class="col-xl-12 col-md-12" style="margin-top: 10px;">-->
+<!--                        <div *ngIf="maxSize && totalItems && currentPage">-->
+<!--                            <pagination [totalItems]="totalItems" [(ngModel)]="currentPage"-->
+<!--                                (pageChanged)="pageChanged($event)" [maxSize]="maxSize"></pagination>-->
+<!--                        </div>-->
+<!--                    </div> &ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--           -->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body table-responsive">
+<!--          <h3 class="mt-0 header-title uppercase"> </h3>-->
+
+          <div class="grid-container">
+            <div class="row">
+              <h3 class=" col-md-10 header-title uppercase"> Ephil-Image List</h3>
+              <button  class="col-md-2 button" routerLink="/eimage-create"><strong>CREATE</strong></button>
+            </div>
+          </div>
+
+          <br>
+          <br><br><br>
+          <table  class="table table-bordered table-bordered dt-responsive nowrap">
+            <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Content</th>
+              <th>Action</th>
+              <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let data of content;let i= index">
+              <td>{{i+1}}</td>
+              <!--              <td [innerHtml]="data.content"></td>-->
+              <td><img class="uploaded-image img-thumbnail"
+                       src="data:image/png;base64,{{data.image}}"></td>
+              <td style="white-space: nowrap; width: 1%;">
+                <div class="btn-group btn-group-sm" style="float: none;">
+                  <a routerLink="/eimage-edit/{{data.id}}" ><button type="button" class="tabledit-edit-button btn btn-success" style="float: none;"><span class="mdi mdi-pencil"></span></button>
+                  </a>
+
+                </div></td>
+              <td>
+                <button type="button" (click)='delete(data.id)' class="tabledit-edit-button btn btn-danger" style="float: none;"><i class="mdi mdi-delete"></i></button>
+
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+

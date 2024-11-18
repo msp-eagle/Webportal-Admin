@@ -1,0 +1,45 @@
+<div class="container-fluid">
+
+
+
+  <div class="row">
+    <div class="col-lg-8">
+
+      <div class="card">
+        <div class="card-body">
+          <h2 class="header-title uppercase">Transparency Update</h2><br>
+
+
+
+          <form [formGroup]="formgroup" (ngSubmit)="onSubmit()" class="parsley-examples">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mb-3">
+                  <ejs-richtexteditor [(ngModel)]="contentdata.content" formControlName="content"  id='defaultRTE' [(value)]='value' [toolbarSettings]='tools'
+                                      [quickToolbarSettings]='quickTools'></ejs-richtexteditor>
+
+                  <!-- <textarea class="form-control"  id="description" rows="10"></textarea> -->
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+            <br>
+            <div class="text-end">
+              <button class="btn btn-primary waves-effect waves-light" type="submit">Submit</button>&nbsp;
+              <button type="reset" class="btn btn-secondary waves-effect">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- end card -->
+    </div>
+    <!-- end col -->
+
+
+  </div>
+</div>
